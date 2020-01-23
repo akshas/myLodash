@@ -1,4 +1,4 @@
 const _ = require("lodash");
-const ch = require("./_chank");
+const cc = require("./_concat");
 
-console.log(ch([1, 2, 3, 4, 5, 6, 7, 8], 3));
+cc([1, 2, 3, 4], 5, 6, 7)

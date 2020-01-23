@@ -1,4 +1,3 @@
-const _ = require("lodash");
 // let ch = _.chunk(["a", "b", "c", "d"], 2);
 
 function ch(arr, num) {
@@ -12,7 +11,6 @@ function ch(arr, num) {
       smallArr = [];
     }
   });
-  console.log(smallArr[0]);
   return commonArr;
 }
 
