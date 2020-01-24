@@ -1,5 +1,15 @@
 function _concat(array, ...args) {
-    console.log(args);
+  let newArr = [].concat(array);
+   args.forEach(item => {
+    if (!Array.isArray(item)) {
+      newArr.push(item);
+    } else {
+      item.forEach(it => {
+        newArr.push(it);
+      })
+    }
+  });
+  return newArr;
 }
 
 
