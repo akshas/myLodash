@@ -1,8 +1,8 @@
 const _ = require("lodash");
-const cc = require("./_concat");
+const drop = require("./_drop");
 
+const arr = [1, 2, 3, 4];
 
-const arr = [1,2,3]
-let sh = cc(arr, [[5],4],{name: "Vasja"});
+let spl = drop(arr);
 
-console.log(sh);
+console.log(spl);
