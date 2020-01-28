@@ -1,8 +1,9 @@
 const _ = require("lodash");
-const drop = require("./_drop");
+const fill = require("./_fill");
 
-const arr = [1, 2, 3, 4];
 
-let spl = drop(arr);
+let arr = [1, 2, 3];
 
-console.log(spl);
+fill(arr, "*")
+
+console.log(arr);
