@@ -1,8 +1,9 @@
-const _ = require("lodash");
-const drop = require("./_drop");
+// const _ = require("lodash");
+const difference = require("./_difference");
 
-const arr = [1, 2, 3, 4];
+let list = [3, 10, 4, 5, 6];
+let list2 = [3, 7, 5, 3, 1];
 
-let spl = drop(arr);
+let list3 = difference(list, list2);
 
-console.log(spl);
+console.log(list3);
