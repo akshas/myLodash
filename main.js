@@ -1,9 +1,8 @@
-// const _ = require("lodash");
-const difference = require("./_difference");
+const _ = require("lodash");
+const fill = require("./_fill");
 
-let list = [3, 10, 4, 5, 6];
-let list2 = [3, 7, 5, 3, 1];
+let arr = [1, 2, 3];
 
-let list3 = difference(list, list2);
+arr = fill(arr, "3", 0, 1);
 
-console.log(list3);
+console.log(arr);
