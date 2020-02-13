@@ -1,8 +1,7 @@
-const _ = require("lodash");
-const fill = require("./_fill");
+// const _ = require("lodash");
+const fl = require("./_flattern");
 
-let arr = [1, 2, 3];
+const ar = [1, 2, [3, [4, 5, [6]]]];
 
-arr = fill(arr, "3", 0, 1);
-
-console.log(arr);
+const res = fl(ar);
+console.log(res);
